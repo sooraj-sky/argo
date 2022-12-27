@@ -45,7 +45,7 @@ spec:
         tier: mysql
     spec:
       containers:
-      - image: mysql:5.6
+      - image: mysql:8.0
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -64,22 +64,22 @@ spec:
           valueFrom:
             secretKeyRef:
               name: mysql-pass2
-              key: password2
+              key: works
 
         - name: MYSQL_ROOT_PASSWORD3
           valueFrom:
             secretKeyRef:
               name: mysql-pass3
-              key: password3
+              key: works
 
         - name: sooraj
-          value: kk
+          value: works
 
         - name: apton
-          value: kk
+          value: works
 
         - name: kerala
-          value: kk      
+          value: works      
         ports:
         - containerPort: 3306
           name: mysql
