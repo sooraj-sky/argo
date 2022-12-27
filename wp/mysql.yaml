@@ -45,7 +45,7 @@ spec:
         tier: mysql
     spec:
       containers:
-      - image: mysql:8.0
+      - image: mysql:5.7
         name: mysql
         env:
         - name: MYSQL_ROOT_PASSWORD
@@ -73,13 +73,13 @@ spec:
               key: works
 
         - name: sooraj
-          value: works
+          value: apton
 
         - name: apton
-          value: works
+          value: apton
 
         - name: kerala
-          value: works      
+          value: apton      
         ports:
         - containerPort: 3306
           name: mysql
